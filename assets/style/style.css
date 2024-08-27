@@ -22,7 +22,7 @@
 }
 
 .header {
-    background: linear-gradient(0deg, rgba(255,255,255,1) 35%, rgba(221,221,221,1) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 35%, rgba(221, 221, 221, 1) 100%);
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -98,10 +98,13 @@
 
 .textos {
     margin: 10px 50px 10px 50px;
+    padding: 10px;
     line-height: 1.5;
     text-align: center;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
+    border-radius: 15px;
 }
 
 .textos-2 {
@@ -112,12 +115,13 @@
     align-items: center;
     font-size: 14px;
 }
+
 .textos-2 a img {
-    margin: 50px 0 -50px 0 ;
+    margin: 50px 0 -50px 0;
     transition: 1s;
 }
 
-.textos-2 a img:hover{
+.textos-2 a img:hover {
     transform: scale(1.1);
 }
 
@@ -128,18 +132,176 @@
 }
 
 
-.footer{
+.footer {
     color: #dddddd;
     display: flex;
     justify-content: center;
     background-color: #121212;
     padding: 20px;
 }
-.footer-servicos{
+
+.footer-servicos {
     color: #dddddd;
     display: flex;
     justify-content: center;
     background-color: #121212;
     padding: 20px;
     margin-top: 175px;
+}
+
+.contato-1 {
+    display: flex;
+    text-align: left;
+}
+
+.contato-1 label {
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.contato-1 input {
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: solid 2px #e1e1e1;
+    padding: 7px 0 7px 10px;
+    margin: 0 0 20px 0;
+    width: 800px;
+}
+
+.contato-1 textarea {
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: solid 2px #e1e1e1;
+    padding: 7px 0 7px 10px;
+    margin: 0 0 20px 0;
+    width: 800px;
+}
+
+.contato-2 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+.contato-2 input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+
+.contato-2 div {
+    display: flex;
+    align-items: first baseline;
+}
+
+
+.contato-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.contato-3 select {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 280px;
+    margin-top: 5px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    border: solid 2px #e1e1e1;
+}
+
+.contato-3 button {
+    text-align: center;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    margin-top: 40px;
+    background-color: #121212;
+    color: #dddddd;
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: transform .4s;
+}
+
+.contato-3 button:hover {
+    cursor: pointer;
+    background-color: #272727;
+    color: #dddddd;
+    transform: scale(1.06);
+}
+
+.conteudo-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* Permite que os elementos se ajustem responsivamente */
+    gap: 20px;
+    /* Espaço entre os elementos */
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.conteudo-flex h1 {
+    width: 100%;
+    text-align: center;
+    /* Centraliza o texto do título */
+    margin-bottom: 20px;
+    /* Espaço entre o título e os elementos abaixo */
+}
+
+.formulario {
+    flex: 1;
+    /* Permite que o formulário ocupe um espaço flexível */
+    min-width: 300px;
+    /* Define uma largura mínima para o formulário */
+    padding-top: 15px;
+    padding-left: 40px;
+}
+
+.mapa {
+    flex: 1;
+    /* Permite que o mapa ocupe um espaço flexível */
+    min-width: 300px;
+    /* Define uma largura mínima para o mapa */
+}
+
+.mapa p {
+    text-align: center;
+    font-size: 18.5px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.mapa h3 {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mapa h3 a{
+    color: #121212;
+    transition: .5s;
+}
+.mapa h3 a:hover{
+    transform: scale(1.06);
+    color: #314fa1;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 600px;
+    /* Altura fixa para o mapa */
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 }
