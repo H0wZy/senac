@@ -36,6 +36,7 @@
 
 .header img:hover {
     transform: scale(1.1);
+    opacity: 0.8;
 }
 
 .header nav {
@@ -54,6 +55,7 @@
 
 .header nav a:hover {
     transform: scale(1.1);
+    opacity: 0.8;
 }
 
 .header nav a::before {
@@ -63,7 +65,7 @@
     left: 0;
     width: 0;
     height: 3px;
-    background-color: #121212;
+    background-color: #121212; 
     transition: .5s;
 }
 
@@ -131,23 +133,20 @@
     text-align: center;
 }
 
+section{
+    height: 90vh ;
+}
 
-.footer {
+
+footer {
     color: #dddddd;
     display: flex;
     justify-content: center;
     background-color: #121212;
-    padding: 20px;
+    padding: 25px;
 }
 
-.footer-servicos {
-    color: #dddddd;
-    display: flex;
-    justify-content: center;
-    background-color: #121212;
-    padding: 20px;
-    margin-top: 175px;
-}
+
 
 .contato-1 {
     display: flex;
@@ -304,4 +303,70 @@
     border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
+}
+
+
+.services-section {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os cards */
+    max-width: 1280px;
+    padding: 50px;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 280px; /* Ajuste a largura para que caibam 3 cards em uma linha */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .5s;
+}
+
+.service-card:hover{
+    opacity: 0.8;
+    transform: scale(1.05);
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+
+.service-image img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.service-info h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.service-info p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #777;
+}
+
+.service-price p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
 }
